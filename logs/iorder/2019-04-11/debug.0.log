@@ -1,0 +1,6 @@
+[DEBUG] 2019-04-11 13:27:02 [http-bio-8585-exec-7] com.yq.dao.UserDao.getUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@d41d62f]
+[DEBUG] 2019-04-11 13:27:02 [http-bio-8585-exec-7] com.yq.dao.UserDao.getUser - ==>  Preparing: select * from user where t_id = ? 
+[DEBUG] 2019-04-11 13:27:02 [http-bio-8585-exec-7] com.yq.dao.UserDao.getUser - ==> Parameters: 1(Integer)
+[DEBUG] 2019-04-11 13:27:02 [http-bio-8585-exec-9] com.yq.dao.UserDao.getUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@d41d62f]
+[DEBUG] 2019-04-11 13:27:02 [http-bio-8585-exec-9] com.yq.dao.UserDao.getUser - ==>  Preparing: select * from user where t_id = ? 
+[DEBUG] 2019-04-11 13:27:02 [http-bio-8585-exec-9] com.yq.dao.UserDao.getUser - ==> Parameters: 1(Integer)

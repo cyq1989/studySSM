@@ -1,0 +1,28 @@
+[DEBUG] 2019-04-09 16:31:01 [http-bio-8585-exec-1] com.yq.dao.UserDao.getUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@313d31ed]
+[DEBUG] 2019-04-09 16:31:01 [http-bio-8585-exec-1] com.yq.dao.UserDao.getUser - ==>  Preparing: select * from user where id = ? 
+[DEBUG] 2019-04-09 16:31:01 [http-bio-8585-exec-1] com.yq.dao.UserDao.getUser - ==> Parameters: 1(Integer)
+[DEBUG] 2019-04-09 16:33:10 [http-bio-8585-exec-1] com.yq.dao.UserDao.getUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4b52b8bc]
+[DEBUG] 2019-04-09 16:33:10 [http-bio-8585-exec-1] com.yq.dao.UserDao.getUser - ==>  Preparing: select * from user where id = ? 
+[DEBUG] 2019-04-09 16:33:10 [http-bio-8585-exec-1] com.yq.dao.UserDao.getUser - ==> Parameters: 1(Integer)
+[DEBUG] 2019-04-09 16:38:16 [http-bio-8585-exec-1] com.yq.dao.UserDao.getUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4d72bd6b]
+[DEBUG] 2019-04-09 16:38:16 [http-bio-8585-exec-1] com.yq.dao.UserDao.getUser - ==>  Preparing: select * from user where id = ? 
+[DEBUG] 2019-04-09 16:38:16 [http-bio-8585-exec-1] com.yq.dao.UserDao.getUser - ==> Parameters: 1(Integer)
+[DEBUG] 2019-04-09 17:13:53 [http-bio-8585-exec-1] com.yq.dao.UserDao.getUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@7571b538]
+[DEBUG] 2019-04-09 17:13:53 [http-bio-8585-exec-1] com.yq.dao.UserDao.getUser - ==>  Preparing: select * from user where id = ? 
+[DEBUG] 2019-04-09 17:13:53 [http-bio-8585-exec-1] com.yq.dao.UserDao.getUser - ==> Parameters: 1(Integer)
+[DEBUG] 2019-04-09 17:16:12 [http-bio-8585-exec-1] com.yq.dao.UserDao.getUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@b3235d1]
+[DEBUG] 2019-04-09 17:16:12 [http-bio-8585-exec-1] com.yq.dao.UserDao.getUser - ==>  Preparing: select * from user where id = ? 
+[DEBUG] 2019-04-09 17:16:12 [http-bio-8585-exec-1] com.yq.dao.UserDao.getUser - ==> Parameters: 1(Integer)
+[DEBUG] 2019-04-09 17:26:40 [http-bio-8585-exec-1] com.yq.dao.UserDao.dropTable - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@1c4f41c9]
+[DEBUG] 2019-04-09 17:26:40 [http-bio-8585-exec-1] com.yq.dao.UserDao.dropTable - ==>  Preparing: drop table ? 
+[DEBUG] 2019-04-09 17:28:13 [http-bio-8585-exec-1] com.yq.dao.UserDao.dropTable - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@7d336f96]
+[DEBUG] 2019-04-09 17:28:13 [http-bio-8585-exec-1] com.yq.dao.UserDao.dropTable - ==>  Preparing: drop table droptable 
+[DEBUG] 2019-04-09 17:28:13 [http-bio-8585-exec-1] com.yq.dao.UserDao.dropTable - ==> Parameters: 
+[DEBUG] 2019-04-09 17:56:23 [http-bio-8585-exec-1] com.yq.dao.UserDao.dropTable - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@19d5c450]
+[DEBUG] 2019-04-09 17:56:23 [http-bio-8585-exec-1] com.yq.dao.UserDao.dropTable - ==>  Preparing: drop table ? 
+[DEBUG] 2019-04-09 17:57:35 [http-bio-8585-exec-1] com.yq.dao.UserDao.dropTable - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@582ee546]
+[DEBUG] 2019-04-09 17:57:35 [http-bio-8585-exec-1] com.yq.dao.UserDao.dropTable - ==>  Preparing: drop table droptable 
+[DEBUG] 2019-04-09 17:57:35 [http-bio-8585-exec-1] com.yq.dao.UserDao.dropTable - ==> Parameters: 
+[DEBUG] 2019-04-09 17:57:35 [http-bio-8585-exec-4] com.yq.dao.UserDao.getUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@582ee546]
+[DEBUG] 2019-04-09 17:57:35 [http-bio-8585-exec-4] com.yq.dao.UserDao.getUser - ==>  Preparing: select * from user where id = ? 
+[DEBUG] 2019-04-09 17:57:35 [http-bio-8585-exec-4] com.yq.dao.UserDao.getUser - ==> Parameters: 1(Integer)
