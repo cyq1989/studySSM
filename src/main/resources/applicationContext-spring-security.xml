@@ -1,0 +1,41 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+          http://www.springframework.org/schema/security
+          http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+
+    <!--拦截所有请求，登录者需要有“ROLE_USER”角色才能放行-->
+    <!--<security:http auto-config="true">-->
+        <!--<security:intercept-url pattern="/**" access="ROLE_USER"/>-->
+    <!--</security:http>-->
+
+    <!--直接访问登录页面的请求，不拦截-->
+    <security:http security="none" pattern="/logins.jsp"/>
+    <security:http auto-config="true">
+        <security:form-login login-page="/logins.jsp" login-processing-url="/login"
+                             username-parameter="username" password-parameter="password"
+                             authentication-success-handler-ref="authSuccess"
+                             authentication-failure-handler-ref="authFailure"
+                             />
+        <!--<security:intercept-url pattern="/login.jsp" access="IS_AUTHENTICATED_ANONYMOUSLY"/>-->
+        <security:intercept-url pattern="/**" access="ROLE_USER" />
+        <security:csrf />
+    </security:http>
+
+    <bean id="authSuccess" class="com.yq.util.AuthenticationSuccessHandlerImpl"></bean>
+    <bean id="authFailure" class="com.yq.util.AuthenticationFailureHandlerImpl"></bean>
+
+    <!--下方的“xx”用户因为没有“ROLE_USER”角色，所以会登录失败-->
+    <security:authentication-manager>
+        <security:authentication-provider>
+            <security:user-service>
+                <security:user name="user" password="user" authorities="ROLE_USER"/>
+                <security:user name="admin" password="admin" authorities="ROLE_USER, ROLE_ADMIN"/>
+                <security:user name="xx" password="xx" authorities="ROLE_ADMIN"/>
+            </security:user-service>
+        </security:authentication-provider>
+    </security:authentication-manager>
+
+</beans>
