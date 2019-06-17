@@ -21,7 +21,7 @@
                              />
         <!--<security:intercept-url pattern="/login.jsp" access="IS_AUTHENTICATED_ANONYMOUSLY"/>-->
         <security:intercept-url pattern="/**" access="ROLE_USER" />
-        <security:csrf />
+        <!--<security:csrf />-->
     </security:http>
 
     <bean id="authSuccess" class="com.yq.util.AuthenticationSuccessHandlerImpl"></bean>

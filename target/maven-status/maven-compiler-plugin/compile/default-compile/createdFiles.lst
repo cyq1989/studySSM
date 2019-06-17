@@ -1,6 +1,1 @@
-com\yq\controller\LoginController.class
-com\yq\interceptor\CommonInterceptor.class
-com\yq\service\UserService.class
-com\yq\dao\UserDao.class
-com\yq\controller\UserController.class
-com\yq\domain\User.class
+com\yq\test\Singleton.class

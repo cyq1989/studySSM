@@ -64,7 +64,7 @@ public class MyTest {
     }
 
     private static void sortUseJava8(ArrayList<String> list) {
-        Collections.sort(list, (s1, s2) -> s1.compareTo(s2));
+//        Collections.sort(list, (s1, s2) -> s1.compareTo(s2));
     }
 
 
