@@ -13,7 +13,11 @@ public class SpringTest {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfiguration.class);
 
-        FactoryBean factoryBean1 = (FactoryBean)context.getBean("colorFactoryBean");
+        context.getBean("car");
+
+        context.close();
+
+//        FactoryBean factoryBean1 = (FactoryBean)context.getBean("colorFactoryBean");
 //        FactoryBean factoryBean2 = (FactoryBean)context.getBean("colorFactoryBean");
 //        System.out.println(factoryBean1 == factoryBean2);
 
@@ -23,10 +27,11 @@ public class SpringTest {
 //            System.out.println(name);
 //        }
 
-        String[] definationBeanNames = context.getBeanNamesForType(Color.class);
-        for (String name : definationBeanNames) {
-            System.out.println(name);
-        }
+//        String[] definationBeanNames = context.getBeanNamesForType(Color.class);
+//        for (String name : definationBeanNames) {
+//            System.out.println(name);
+//        }
+
 //        Map<String, Person> map = context.getBeansOfType(Person.class);
 //        System.out.println(map);
 //        System.out.println(context.getBean("userService"));
